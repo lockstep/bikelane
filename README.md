@@ -4,6 +4,12 @@ FIXME: description
 
 ## Developing
 
+### Style guides
+
+Git commit messages http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html        
+SQL http://sqlstyle.guide Upper case is not dictated, lower case may be used          
+Clojure https://github.com/bbatsov/clojure-style-guide        
+
 ### Setup
 
 When you first clone this repository, run:
