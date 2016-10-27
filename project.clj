@@ -19,7 +19,7 @@
                  [org.postgresql/postgresql "9.4.1211"]
                  [duct/ragtime-component "0.1.4"]]
   :plugins [[lein-environ "1.0.3"]
-            [lein-cljsbuild "1.1.2"]]
+            [lein-cljsbuild "1.1.4"]]
   :main ^:skip-aot bikelane.main
   :uberjar-name "bikelane-standalone.jar"
   :target-path "target/%s/"
