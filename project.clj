@@ -19,7 +19,10 @@
                  [org.postgresql/postgresql "9.4.1211"]
                  [duct/ragtime-component "0.1.4"]]
   :plugins [[lein-environ "1.0.3"]
-            [lein-cljsbuild "1.1.4"]]
+            [lein-cljsbuild "1.1.4"]
+            [test2junit "1.2.5"]]
+  :test2junit-output-dir ~(or (System/getenv "CIRCLE_TEST_REPORTS")
+                              "target/test2junit")
   :main ^:skip-aot bikelane.main
   :uberjar-name "bikelane-standalone.jar"
   :target-path "target/%s/"
