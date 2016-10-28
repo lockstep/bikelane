@@ -4,10 +4,11 @@
   :db   #var duct.component.hikaricp/hikaricp
   :ragtime #var duct.component.ragtime/ragtime}
  :endpoints
- {:example #var bikelane.endpoint.example/example-endpoint}
+ {:example #var bikelane.endpoint.example/example-endpoint
+  :concept #var bikelane.endpoint.concept/concept-endpoint}
  :dependencies
  {:http [:app]
-  :app  [:example]
+  :app  [:example :concept]
   :ragtime [:db]
   :example [:db]}
  :config
