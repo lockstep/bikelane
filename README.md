@@ -21,14 +21,6 @@ lein setup
 This will create files for local configuration, and prep your system
 for the project.
 
-Next connect the repository to the [Heroku][] app:
-
-```sh
-heroku git:remote -a FIXME
-```
-
-[heroku]: https://www.heroku.com/
-
 ### Environment
 
 To begin developing, start with a REPL.
