@@ -1,13 +1,13 @@
 {:components
- {:app  #var duct.component.handler/handler-component
-  :http #var ring.component.jetty/jetty-server
-  :db   #var duct.component.hikaricp/hikaricp
+ {:app     #var duct.component.handler/handler-component
+  :http    #var ring.component.jetty/jetty-server
+  :db      #var duct.component.hikaricp/hikaricp
   :ragtime #var duct.component.ragtime/ragtime}
  :endpoints
  {:example #var bikelane.endpoint.example/example-endpoint}
  :dependencies
- {:http [:app]
-  :app  [:example]
+ {:http    [:app]
+  :app     [:example]
   :ragtime [:db]
   :example [:db]}
  :config
@@ -24,18 +24,18 @@
     :arguments
     {:not-found     #resource "bikelane/errors/404.html"
      :hide-errors   #resource "bikelane/errors/500.html"
-     :route-aliases {"/" "/index.html"}
+     :route-aliases {"/" "/landing.html"}
      :ring-defaults
      {:params    {:urlencoded true
                   :keywordize true
                   :multipart  true
                   :nested     true}
       :cookies   true
-      :session   {:flash true
+      :session   {:flash        true
                   :cookie-attrs {:http-only true}}
-      :security  {:anti-forgery   true
-                  :xss-protection {:enable? true, :mode :block}
-                  :frame-options  :sameorigin
+      :security  {:anti-forgery         true
+                  :xss-protection       {:enable? true, :mode :block}
+                  :frame-options        :sameorigin
                   :content-type-options :nosniff}
       :static    {:resources "bikelane/public"}
       :responses {:not-modified-responses true

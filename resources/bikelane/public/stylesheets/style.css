@@ -1,0 +1,100 @@
+.navbar {
+  background-color: brown;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #f0d6d6;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+  color: white;
+}
+
+.navbar .logo {
+  position: relative;
+  top: 2px;
+  height: 40px;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(233, 224, 215);
+}
+
+.introduction h1 {
+  position: relative;
+  top: 60px;
+  z-index: 1;
+  color: #3e3000;
+  font-size: 45px;
+  line-height: 55px;
+}
+
+.primary-image {
+  position: relative;
+  top: -30px;
+  margin-bottom: -70px;
+}
+
+.cta-section {
+  margin-bottom: 50px;
+}
+
+.cta-section input {
+  border: solid 1px #3e3000;
+}
+
+.hero-intro {
+  background-color: #ce5959;
+  color: white;
+}
+
+.hero-intro h2 {
+  padding: 30px;
+}
+
+.common-hero {
+  background-image: url('../images/hero.jpg');
+  background-size: cover;
+  color: #2c387f;
+}
+
+.common-hero h2 {
+  margin-bottom: 30px;
+}
+
+.common-hero p {
+  color: black;
+}
+
+.common-hero .text-wrapper {
+  padding: 80px 50px;
+}
+
+h1 {
+  line-height: 50px;
+  font-family: Lora;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+}
+
+h2 {
+  font-family: Lora;
+  line-height: 38px;
+}
+
+h3 {
+  font-family: Lora;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+}
+p {
+  font-family: Lora;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+}
