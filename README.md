@@ -157,14 +157,6 @@ Creating file resources/foo/migrations/20160519143643-create-users.down.sql
 nil
 ```
 
-## Deploying
-
-To deploy the project, run:
-
-```sh
-lein deploy
-```
-
 ## Legal
 
 Copyright © 2016 FIXME
